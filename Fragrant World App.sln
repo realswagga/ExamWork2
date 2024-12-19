@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fragrant World", "Fragrant World\Fragrant World.csproj", "{4C1D3DC3-8100-4447-A2F2-E7A705532ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseLayer", "DataBaseLayer\DataBaseLayer.csproj", "{D3210C1D-88ED-4EEA-B79D-7231C7F08EFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C1D3DC3-8100-4447-A2F2-E7A705532ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1D3DC3-8100-4447-A2F2-E7A705532ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1D3DC3-8100-4447-A2F2-E7A705532ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1D3DC3-8100-4447-A2F2-E7A705532ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3210C1D-88ED-4EEA-B79D-7231C7F08EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3210C1D-88ED-4EEA-B79D-7231C7F08EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3210C1D-88ED-4EEA-B79D-7231C7F08EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3210C1D-88ED-4EEA-B79D-7231C7F08EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {693E03DE-11DE-4EBA-96F6-C8267E4C8C22}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,66 @@
+﻿<Page x:Class="Fragrant_World.Pages.CheckoutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Fragrant_World.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="CheckoutPage">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="63"/>
+                <RowDefinition Height="350*"/>
+                <RowDefinition Height="37*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="206"/>
+                    <ColumnDefinition Width="173*"/>
+                    <ColumnDefinition Width="224*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Width="200" HorizontalAlignment="Left" CornerRadius="10" Margin="5,9,0,9">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/logo.png" HorizontalAlignment="Left" Height="30" Margin="5 0 0 0"/>
+                        <Label Content="Ароматный Мир" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="7.5 0 0 0"/>
+                    </StackPanel>
+                    <Border.Effect>
+                        <DropShadowEffect Color="Black" ShadowDepth="3" BlurRadius="15" Opacity="0.1"/>
+                    </Border.Effect>
+                    <Border.Style>
+                        <Style>
+                            <Setter Property="Label.FontFamily" Value="Cascadia Code SemiBold"/>
+                            <Setter Property="Border.Background" Value="#FFCC99"/>
+                            <Setter Property="Border.CornerRadius" Value="5"/>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Border Grid.Column="1" Width="789" Background="#FFCC99" CornerRadius="10" HorizontalAlignment="Left" Margin="5,9,0,9" Grid.ColumnSpan="2">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Label x:Name="UserNameLabel" VerticalAlignment="Center" FontSize="16" FontFamily="Cascadia Code SemiBold"/>
+                        <Image x:Name="CartImage" Source="/Images/user.png" Height="33" Margin="0 0 2 0">
+                            <Image.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="3" ShadowDepth="2" Opacity="0.2" Direction="240"/>
+                            </Image.Effect>
+                        </Image>
+                        <Image Source="/Images/logout.png" Height="30" Style="{StaticResource HoverImage}" MouseDown="GoBackImage_MouseDown">
+                            <Image.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="4" ShadowDepth="2" Opacity="0.3" Direction="240"/>
+                            </Image.Effect>
+                        </Image>
+                    </StackPanel>
+                    <Border.Effect>
+                        <DropShadowEffect Color="Black" ShadowDepth="3" BlurRadius="15" Opacity="0.1"/>
+                    </Border.Effect>
+                </Border>
+            </Grid>
+            <Label Content="Корзина" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="26" Grid.Row="1" Margin="15 -52.5 0 0">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="15" Opacity="0.1" Color="Black"/>
+                </Label.Effect>
+            </Label>
+        </Grid>
+    </Grid>
+</Page>
